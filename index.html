@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charles Zhou | Mechanical Engineering Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header p { font-size: 1.1rem; color: #d9e4f5; }
+
+    nav {
+      text-align: center;
+      background: #e0e0e0;
+      padding: 0.7rem;
+    }
+    nav a {
+      color: #002b5c;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #002b5c;
+      border-bottom: 2px solid #002b5c;
+      padding-bottom: 0.3rem;
+    }
+    .project {
+      margin-bottom: 3rem;
+    }
+    .project h3 {
+      color: #003366;
+      margin-top: 0;
+    }
+    .video-placeholder, .image-placeholder {
+      width: 100%;
+      height: 350px;
+      background: #dce3ed;
+      border: 2px dashed #99a7b9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #54657d;
+      margin: 0.5rem 0 1rem 0;
+      font-style: italic;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e9ecef;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    ul { line-height: 1.6; }
+    a.btn {
+      background: #002b5c;
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    a.btn:hover { background: #004494; }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>Charles Zhou</h1>
+  <p>Mechanical Engineering • Robotics • Design & Control</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a fourth-year Mechanical Engineering student at UCSB specializing in robotics, control systems, and
+    electromechanical design. My work bridges mechanical design and embedded systems — from submersible robots to
+    soft robotic actuators and motor control interfaces.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Major Projects</h2>
+
+  <!-- Submersible Robot -->
+  <div class="project" id="submersible">
+    <h3>Autonomous Submersible Robot</h3>
+    <div class="video-placeholder">Video embed placeholder (YouTube link)</div>
+    <div class="image-placeholder">Image carousel placeholder</div>
+    <p><b>Objective:</b> Develop a self-contained robot capable of measuring underwater depth and resurfacing autonomously.</p>
+    <ul>
+      <li>Integrated pressure sensor, solenoid valve, and ESP32 microcontroller for depth detection and buoyancy control.</li>
+      <li>Implemented Wi-Fi communication to transmit depth and temperature data upon resurfacing.</li>
+      <li>Won <b>Most Technical Project Award</b> at UCSB Junior Design Fair.</li>
+    </ul>
+    <p><b>Tools:</b> ESP32-CAM, MOSFET driver, SolidWorks, 3D printing (Bambu X1C), MATLAB.</p>
+    <p><b>Code:</b> <a href="#" class="btn">View on GitHub</a></p>
+    <p><b>Reflection:</b> Lessons on waterproofing, control loop stability, and sensor calibration in dynamic environments.</p>
+  </div>
+
+  <!-- CubeMars Motor Control -->
+  <div class="project" id="cubemars">
+    <h3>CubeMars Motor Control Interface</h3>
+    <div class="video-placeholder">Video embed placeholder</div>
+    <div class="image-placeholder">System diagram / GUI screenshot placeholder</div>
+    <p><b>Objective:</b> Create a Python-based CAN interface for controlling CubeMars brushless motors in MIT mode.</p>
+    <ul>
+      <li>Used Seeed Studio USB-CAN analyzer for communication with AK40-10 and AK80-64 motors.</li>
+      <li>Developed a real-time control GUI with heartbeat safety, torque/velocity monitoring, and dropdown motor selection.</li>
+      <li>Optimized code for modular control and decoding feedback packets.</li>
+    </ul>
+    <p><b>Tools:</b> Python 3.13, python-can, Tkinter GUI, CubeMars CAN protocol.</p>
+    <p><b>Code:</b> <a href="#" class="btn">View on GitHub</a></p>
+    <p><b>Reflection:</b> Gained experience with embedded communication, CAN bus safety, and modular software architecture.</p>
+  </div>
+
+  <!-- Jumper Robot Clutch -->
+  <div class="project" id="jumper">
+    <h3>Soft Jumper Robot Clutch Mechanism</h3>
+    <div class="video-placeholder">Video embed placeholder</div>
+    <div class="image-placeholder">Mechanical diagram / test photo placeholder</div>
+    <p><b>Objective:</b> Design and evaluate clutch systems enabling rapid energy release for a soft jumping robot.</p>
+    <ul>
+      <li>Prototyped electromagnetic, pawl, and string-pulley clutch variations using laser-cut and 3D-printed components.</li>
+      <li>Characterized timing and repeatability across iterations using high-speed video and force measurements.</li>
+      <li>Collaborated in UCSB Hawkes Lab to optimize performance beyond biological limits.</li>
+    </ul>
+    <p><b>Tools:</b> SolidWorks, Onyx 3D printing, Arduino timing system, FEA simulation.</p>
+    <p><b>Reflection:</b> Learned trade-offs between reliability, force multiplication, and release synchronization.</p>
+  </div>
+
+  <!-- Torsional Measurement Apparatus -->
+  <div class="project" id="torsion">
+    <h3>Torsional Stiffness Measurement Apparatus</h3>
+    <div class="video-placeholder">Video embed placeholder</div>
+    <div class="image-placeholder">Experimental setup / graph placeholder</div>
+    <p><b>Objective:</b> Build a test rig to measure the torsional stiffness of soft robotic arms with high repeatability.</p>
+    <ul>
+      <li>Designed modular fixture system with rotary encoder and torque sensor integration.</li>
+      <li>Fabricated parts with 3D-printed couplings and aluminum baseplate for alignment accuracy.</li>
+      <li>Implemented data acquisition using LabVIEW and MATLAB for torque-angle characterization.</li>
+    </ul>
+    <p><b>Tools:</b> SolidWorks, FEA validation, 3D printing, MATLAB data analysis.</p>
+    <p><b>Reflection:</b> Reinforced understanding of experimental uncertainty, fixture design, and repeatability analysis.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <p><b>CAD / Simulation:</b> SolidWorks, COMSOL, ANSYS, Fusion 360</p>
+  <p><b>Programming:</b> Python, MATLAB, C/C++, Arduino, LabVIEW</p>
+  <p><b>Fabrication:</b> 3D Printing (Bambu X1C, Ender 3), CNC, Laser Cutting</p>
+  <p><b>Specialties:</b> Controls, Robotics, Mechatronics, Microfluidics</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:charleszhou@ucsb.edu">charleszhou@ucsb.edu</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/charleszhou" target="_blank">linkedin.com/in/charleszhou</a></p>
+  <p>GitHub: <a href="https://github.com/charleszzhou" target="_blank">github.com/charleszzhou</a></p>
+</section>
+
+<footer>
+  © 2025 Charles Zhou — Built with GitHub Pages
+</footer>
+</body>
+</html>
