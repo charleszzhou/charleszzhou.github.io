@@ -52,7 +52,14 @@
       color: #003366;
       margin-top: 0;
     }
-    .video-placeholder, .image-placeholder {
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 8px;
+      margin: 0.5rem 0 1rem 0;
+    }
+    .image-placeholder {
       width: 100%;
       height: 350px;
       background: #dce3ed;
@@ -112,7 +119,7 @@
   <!-- Submersible Robot -->
   <div class="project" id="submersible">
     <h3>Autonomous Submersible Robot</h3>
-    <div class="video-placeholder">Video embed placeholder (YouTube link)</div>
+    <iframe src="https://www.youtube.com/embed/TF_de-jIFxg" title="Submersible Robot Demo" allowfullscreen></iframe>
     <div class="image-placeholder">Image carousel placeholder</div>
     <p><b>Objective:</b> Develop a self-contained robot capable of measuring underwater depth and resurfacing autonomously.</p>
     <ul>
@@ -128,7 +135,7 @@
   <!-- CubeMars Motor Control -->
   <div class="project" id="cubemars">
     <h3>CubeMars Motor Control Interface</h3>
-    <div class="video-placeholder">Video embed placeholder</div>
+    <iframe src="https://www.youtube.com/embed/w0ltRVZh_z4" title="CubeMars Motor Control" allowfullscreen></iframe>
     <div class="image-placeholder">System diagram / GUI screenshot placeholder</div>
     <p><b>Objective:</b> Create a Python-based CAN interface for controlling CubeMars brushless motors in MIT mode.</p>
     <ul>
@@ -141,10 +148,23 @@
     <p><b>Reflection:</b> Gained experience with embedded communication, CAN bus safety, and modular software architecture.</p>
   </div>
 
+  <!-- CubeMars Position Control -->
+  <div class="project" id="cubemars-pos">
+    <h3>CubeMars Motor Position Control</h3>
+    <iframe src="https://www.youtube.com/embed/TssESekdqno" title="CubeMars Motor Position Control" allowfullscreen></iframe>
+    <div class="image-placeholder">Position control graph / code snippet placeholder</div>
+    <p><b>Objective:</b> Demonstrate high-precision position control using MIT-mode torque feedback and proportional control tuning.</p>
+    <ul>
+      <li>Implemented position-loop feedback via CAN and Python for stable trajectory control.</li>
+      <li>Validated with encoder data and real-time plots through custom GUI.</li>
+    </ul>
+    <p><b>Tools:</b> python-can, Tkinter GUI, MIT-mode motor control, feedback tuning.</p>
+  </div>
+
   <!-- Jumper Robot Clutch -->
   <div class="project" id="jumper">
     <h3>Soft Jumper Robot Clutch Mechanism</h3>
-    <div class="video-placeholder">Video embed placeholder</div>
+    <iframe src="https://www.youtube.com/embed/qiU52qfbQUg" title="Jumper Robot Clutch" allowfullscreen></iframe>
     <div class="image-placeholder">Mechanical diagram / test photo placeholder</div>
     <p><b>Objective:</b> Design and evaluate clutch systems enabling rapid energy release for a soft jumping robot.</p>
     <ul>
@@ -156,10 +176,23 @@
     <p><b>Reflection:</b> Learned trade-offs between reliability, force multiplication, and release synchronization.</p>
   </div>
 
+  <!-- Pawl Clutch Test -->
+  <div class="project" id="pawl">
+    <h3>Pawl Clutch Test</h3>
+    <iframe src="https://www.youtube.com/embed/rH7OQ6rwPVQ" title="Pawl Clutch Test" allowfullscreen></iframe>
+    <div class="image-placeholder">High-speed capture placeholder</div>
+    <p><b>Objective:</b> Validate pawl clutch timing and reliability through experimental trials.</p>
+    <ul>
+      <li>Captured release response and synchronization using high-speed recording.</li>
+      <li>Bench-tested force consistency and mechanical reset mechanism.</li>
+    </ul>
+    <p><b>Tools:</b> SolidWorks, slow-motion video analysis, 3D printed pawl mechanism.</p>
+  </div>
+
   <!-- Torsional Measurement Apparatus -->
   <div class="project" id="torsion">
     <h3>Torsional Stiffness Measurement Apparatus</h3>
-    <div class="video-placeholder">Video embed placeholder</div>
+    <iframe src="https://www.youtube.com/embed/U0L9wiSzK-w" title="Torsional Stiffness Apparatus" allowfullscreen></iframe>
     <div class="image-placeholder">Experimental setup / graph placeholder</div>
     <p><b>Objective:</b> Build a test rig to measure the torsional stiffness of soft robotic arms with high repeatability.</p>
     <ul>
